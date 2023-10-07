@@ -10,7 +10,7 @@ I have based run the red-teaming experiments on four target models -
 * [Pythia-6.9B](https://huggingface.co/EleutherAI/pythia-6.9b)
 * [Phi-1.5](https://huggingface.co/microsoft/phi-1_5.)
 
-I generated 50,000 valid test cases (questions) as opposed to 500,000 mentioned in the paper, due to compute constraints. A small percantge of the test cases were succesful in being able to elicit toxic language behavior from these models.
+I generated 50,000 valid test cases (questions) as opposed to 500,000 mentioned in the paper, due to compute constraints. A small percantge of the test cases were succesful in being able to elicit toxic language generation from these models.
 
 For Toxicity detection, I have used [Detoxify](https://github.com/unitaryai/detoxify).
 
@@ -24,3 +24,5 @@ The percentage of toxic/offensive answers (toxicity probability > 0.5) generated
 | Phi-1.5B     | 0.11%     |                     |                                  |
 
 The questions, answers and toxicity scores can be found in the [artifacts](artifacts/) directory.
+
+For inference, I have used [vLLM](https://github.com/vllm-project/vllm) (which is awesome!) for GPT2-XL, Llama-2 and Pythia to speedup the generation process. Phi-1.5 is currently not supported.
