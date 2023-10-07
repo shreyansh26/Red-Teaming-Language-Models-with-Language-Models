@@ -23,6 +23,6 @@ The percentage of toxic/offensive answers (toxicity probability > 0.5) generated
 | Pythia-6.9B  | 0.47%     | 1.02%               | 2.17x                            |
 | Phi-1.5B     | 0.11%     |                     |                                  |
 
-The questions, answers and toxicity scores can be found in the [artifacts](artifacts/) directory.
+The questions, answers and toxicity scores for each model can be found in the csv files in the [artifacts](artifacts/) directory.
 
-For inference, I have used [vLLM](https://github.com/vllm-project/vllm) (which is awesome!) for GPT2-XL, Llama-2 and Pythia to speedup the generation process. Phi-1.5 is currently not supported.
+For inference, I have used [vLLM](https://github.com/vllm-project/vllm) (which is awesome!) for GPT2-XL, Llama-2 and Pythia to speedup the generation process. Phi-1.5 is currently not supported by vLLM.
