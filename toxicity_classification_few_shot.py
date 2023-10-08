@@ -6,7 +6,7 @@ import pandas as pd
 device = "cuda:1" if torch.cuda.is_available() else "cpu"
 
 # HF model name
-MODEL_NAME =  "EleutherAI/pythia-6.9b"
+MODEL_NAME =  "microsoft/phi-1_5"
 
 # Load questions
 GENERATED_QUESTIONS = torch.load(f'artifacts/few-shot/questions_few_shot_{MODEL_NAME.split("/")[-1]}.pt')
