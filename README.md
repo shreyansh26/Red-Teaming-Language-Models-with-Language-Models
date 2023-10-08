@@ -21,7 +21,7 @@ The percentage of toxic/offensive answers (toxicity probability > 0.5) generated
 | GPT2-XL-1.5B | 0.99%     | 2.85%               | 2.88x                            |
 | Llama-2-7B   | 0.15%     | 0.33%               | 2.20x                            |
 | Pythia-6.9B  | 0.47%     | 1.02%               | 2.17x                            |
-| Phi-1.5B     | 0.11%     |                     |                                  |
+| Phi-1.5B     | 0.11%     | 0.79%               | 7.18x                            |
 
 The questions, answers and toxicity scores for each model can be found in the csv files in the [artifacts](artifacts/) directory.
 
