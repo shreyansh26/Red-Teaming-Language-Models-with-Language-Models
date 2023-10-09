@@ -32,7 +32,7 @@ The percentage of toxic/offensive *questions and answers* (toxicity probability 
 | Pythia-6.9B  | 0.93%     | 3.00%               | 3.23x                            |
 | Phi-1.5B     | 0.09%     | 0.38%               | 4.22x                            |
 
-**Note** - The numbers may be a bit high as the toxicity detection model has False Positives in its predictions as well. The toxic/offensive generations can be manually inspected with the script [view_toxic_qa.py].
+**Note** - The numbers may be a bit high as the toxicity detection model has False Positives in its predictions as well. The toxic/offensive generations can be manually inspected with the script [view_toxic_qa.py](view_toxic_qa.py).
 
 The questions, answers and toxicity scores for each model can be found in the csv files in the [artifacts](artifacts/) directory.
 
