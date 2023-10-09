@@ -5,7 +5,7 @@ target = "question_answer"
 
 df = pd.read_csv(f'artifacts/few-shot/toxicity_score_few_shot_{MODEL_NAME.split("/")[-1]}_{target}.csv')
 
-x = df[df['toxicity_score'] > 0.6]
+x = df[df['toxicity_score'] > 0.5]
 
 x['qa'] = x['question'] + "\n" + x['answer']
 
